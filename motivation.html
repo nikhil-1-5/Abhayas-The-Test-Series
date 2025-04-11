@@ -3,26 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Motivational Gallery</title>
+  <title>Daily Motivation</title>
   <link rel="stylesheet" href="motivation.css" />
 </head>
 <body>
   <div class="container">
     <h1>🌟 Daily Motivation 🌟</h1>
-    <div class="image-box">
-      <img id="motivation-img" src="1.jpg" alt="Motivational Image">
+    <div class="quote-box">
+      <p id="motivation-text">Loading...</p>
     </div>
     <div class="buttons">
-      <button onclick="prevImage()">⬅ Previous</button>
-      <button onclick="nextImage()">Next ➡</button>
+      <button onclick="prevSpeech()">⬅ Previous</button>
+      <button onclick="nextSpeech()">Next ➡</button>
     </div>
   </div>
-  
-  <!-- Add this "Back to Home" button -->
+
   <div class="home-button">
-    <button onclick="goHome()" class="motivated-btn">🏆 Ready for Round 2? Let’s Go!</button>
+    <button onclick="goHome()" class="motivated-btn">💥 Let's Conquer Today!</button>
   </div>
-  
+
   <script src="motivation.js"></script>
 </body>
 </html>
