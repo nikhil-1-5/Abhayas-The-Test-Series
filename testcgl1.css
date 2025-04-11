@@ -1,0 +1,295 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 60%;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#timer {
+    text-align: right;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: red;
+}
+
+.section-bar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-bar button {
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #ccc;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.section-bar button.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+#question-container {
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px auto;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#reviewed-questions {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.hidden {
+    display: none;
+}
+
+#result, #solutions {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+}
+
+#summary {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e8f5e9;
+    border: 1px solid #4caf50;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+}
+
+/* Main Content */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+/* Horizontal Panel */
+.panel-container {
+    width: 98%;
+    background-color: #e0f7fa;
+    padding: 10px 20px;
+    border-top: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Status Panel */
+.status {
+    display: flex;
+    flex-direction: column; /* Stack status items vertically */
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* Individual Status */
+.status-item {
+    display: flex;
+    align-items: center; /* Align icon and text in the center */
+    gap: 5px; /* Space between icon and text */
+    font-size: 14px;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Add spacing for better layout */
+.status-item span {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+/* Section Title */
+.section h3 {
+    margin-bottom: 10px;
+}
+
+/* Question Panel */
+.question-panel {
+    display: grid;
+    grid-template-columns: repeat(25, 1fr);
+    gap: 5px;
+}
+
+/* Question Button Style */
+.question-btn {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* Question Button - Status Styles */
+
+.question-btn.marked {
+    background-color: #4278de;
+}
+.question-btn.answered {
+    background-color: #43e643;
+}
+.question-btn.skipped {
+    background-color: #f93636;
+}
+.question-btn.not-answered {
+    background-color: #e1e45a;
+}
+
+/* Responsive - Stack items vertically for smaller screens */
+@media (max-width: 768px) {
+    .panel-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .status {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .question-panel {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+.exit-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+  }
+  
+  .exit-button button {
+    background-color: #e53935;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: background-color 0.3s;
+  }
+  
+  .exit-button button:hover {
+    background-color: #c62828;
+  }
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  
+  .modal.hidden {
+    display: none;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+  
+  .modal-content h2 {
+    margin-bottom: 10px;
+    color: #d32f2f;
+  }
+  
+  .modal-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .yes-btn, .no-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .yes-btn {
+    background-color: #d32f2f;
+    color: white;
+  }
+  
+  .no-btn {
+    background-color: #4caf50;
+    color: white;
+  }
+  

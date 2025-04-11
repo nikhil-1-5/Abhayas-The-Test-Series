@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz</title>
+  <link rel="stylesheet" href="mathsq1.css"/>
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Quick Quiz</h1>
+    <div id="questionBox">
+      <div id="timer">Time Left: 15s</div>
+      <h2 id="question">Question text</h2>
+      <div id="options"></div>
+      <button id="nextBtn">Next</button>
+    </div>
+    <div id="resultBox" class="hidden">
+      <h2>Quiz Result</h2>
+      <p id="score">Score:</p>
+      <p id="avgTime">Average Time Taken:</p>
+      <div id="solutions"></div>
+    </div>
+  </div>
+  <div class="exit-wrapper">
+    <button id="exitBtn">Exit</button>
+  </div>
+  
+  <!-- Exit confirmation popup -->
+  <div id="exitPopup" class="exit-popup hidden">
+    <div class="popup-box">
+      <p>Do you want to exit the quiz?</p>
+      <div class="popup-actions">
+        <button id="yesExit">Yes</button>
+        <button id="noExit">No</button>
+      </div>
+    </div>
+  </div>
+  
+  <script src="reasq1.js"></script>
+</body>
+</html>

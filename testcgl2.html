@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="testcgl1.css">
+    <title>Test Series Website</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Test Series - 2</h1>
+        
+        <!-- Timer and Section Bar -->
+        <div id="timer">Time Left: 60:00</div>
+        <div class="section-bar">
+            <button onclick="switchSection(0)">Quantative Aptitude</button>
+            <button onclick="switchSection(1)">Genral Intelligence and Reasoning</button>
+            <button onclick="switchSection(2)">Genral Awareness</button>
+            <button onclick="switchSection(3)">English Comprenhensive</button>
+        </div>
+
+        <!-- Exit Button -->
+        <div class="exit-button">
+            <button onclick="confirmExit()">⏹ Exit</button>
+        </div>
+  
+        <!-- Exit Confirmation Modal -->
+<div id="exitModal" class="modal hidden">
+    <div class="modal-content">
+      <h2>⚠️ Exit Test?</h2>
+      <p>Are you sure you want to exit the test? Your answers will be submitted.</p>
+      <div class="modal-actions">
+        <button class="yes-btn" onclick="submitTest()">Yes</button>
+        <button class="no-btn" onclick="closeExitModal()">No</button>
+      </div>
+    </div>
+  </div>
+  
+
+        <!-- Question Container -->
+        <div id="question-container">
+            <p id="question">Question will be displayed here.</p>
+            <div id="options"></div>
+        </div>
+
+        <!-- Control Buttons -->
+        <div class="controls">
+            <button onclick="markForReview()">Mark for Review</button>
+            <button onclick="skipQuestion()">Skip</button>
+            <button onclick="previousQuestion()" class="nav-btn">Previous</button>
+            <button onclick="nextQuestion()">Next</button>
+            <button onclick="submitTest()">Submit</button>
+        </div>
+       
+
+        <!-- Marked for Review List -->
+        <div id="reviewed-questions"></div>
+
+        <!-- Result & Solution Section -->
+        <div id="result" class="hidden"></div>
+        <div id="solutions" class="hidden"></div>
+    </div>
+    
+<!-- Horizontal Panel for Question Status -->
+<div class="panel-container">
+<div class="status">
+    <div class="status-item answered">
+        🟢 Answered <!-- <span>0</span> -->
+    </div>
+    <div class="status-item marked">
+        🔵 Marked <!-- <span>0</span> -->
+    </div>
+    <div class="status-item not-visited">
+        🔴 Not Visited <!-- <span>0</span> -->
+    </div>
+    <div class="status-item not-answered">
+        🟡 Not Answered <!-- <span>0</span> --> 
+    </div>
+</div>
+
+
+
+    <div class="section">
+        <div class="question-panel" id="questionPanel">
+            <!-- Question buttons generated dynamically -->
+        </div>
+    </div>
+</div>
+
+    
+    <script src="testcgl2.js"></script>
+</body>
+</html>

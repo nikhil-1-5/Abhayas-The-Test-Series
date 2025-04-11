@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Motivational Gallery</title>
+  <link rel="stylesheet" href="motivation.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌟 Daily Motivation 🌟</h1>
+    <div class="image-box">
+      <img id="motivation-img" src="images/1.jpg" alt="Motivational Image">
+    </div>
+    <div class="buttons">
+      <button onclick="prevImage()">⬅ Previous</button>
+      <button onclick="nextImage()">Next ➡</button>
+    </div>
+  </div>
+  
+  <!-- Add this "Back to Home" button -->
+  <div class="home-button">
+    <button onclick="goHome()" class="motivated-btn">🏆 Ready for Round 2? Let’s Go!</button>
+  </div>
+  
+  <script src="motivation.js"></script>
+</body>
+</html>

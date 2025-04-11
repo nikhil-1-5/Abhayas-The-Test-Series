@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload Doubt</title>
+  <link rel="stylesheet" href="doubt.css">
+</head>
+<body>
+
+    <div class="app">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">ABHYAS</div>
+            <nav>
+              <a href="home.html">🏠 Home</a>
+              <a href="notes.html">📘 Notes</a>
+              <a href="quiz.html">📋 Quizes</a>
+              <a href="motivation.html">🌟 Motivation</a>
+              <a class="active" href="#">❓ Ask Doubts</a>
+            </nav>
+          </aside>
+  <div class="container">
+    <h2>Upload Your Doubt</h2>
+    
+    <form id="doubtForm">
+      <label for="imageUpload">Upload Image:</label>
+      <input type="file" id="imageUpload" accept="image/*" required>
+
+      <div id="previewContainer">
+        <img id="imagePreview" src="#" alt="Image Preview" />
+      </div>
+
+      <label for="doubtText">Your Doubt:</label>
+      <textarea id="doubtText" rows="4" placeholder="Explain your doubt here..." required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="successMessage" class="hidden">✅ Doubt submitted successfully!</div>
+    <div id="solutionContainer">
+        <h3>Solution</h3>
+        <button id="seeSolutionBtn">See Solution</button>
+        <p id="noSolutionMsg" class="hidden">❌ Solution not uploaded yet.</p>
+        <img id="solutionImage" src="#" alt="Solution Image" class="hidden" />
+      </div>
+  </div>
+<!-- ... inside <body> after form ... -->
+</div>
+<div class="coming-soon-banner">
+  🚧 Ask Doubt Feature Coming Soon! 🚧
+</div>
+      
+      
+  <script src="doubt.js"></script>
+</body>
+</html>

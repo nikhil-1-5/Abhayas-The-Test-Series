@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #f9d423, #ff4e50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .image-box {
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    border: none;
+    background: #ff4e50;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .buttons button:hover {
+    background: #f94848;
+  }
+  
+
+ .motivated-btn {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  padding: 14px 28px;
+  font-size: 18px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #FF5722, #E91E63);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 8px 20px rgba(233, 30, 99, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  letter-spacing: 1px;
+  animation: pulse 2s infinite;
+}
+
+.motivated-btn:hover {
+  background: linear-gradient(135deg, #E91E63, #9C27B0);
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(156, 39, 176, 0.6);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 10px rgba(233, 30, 99, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(233, 30, 99, 1);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(233, 30, 99, 0.5);
+  }
+}
