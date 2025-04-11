@@ -8,7 +8,7 @@ const questions = [
     {
         q: "What is the value of (15% of 400) + (25% of 200)?",
         options: ["100", "110", "115", "120"],
-        answer: 2,
+        answer: 1,
         solution: "(15/100 * 400) + (25/100 * 200) = 60 + 50 = 110"
     },
     {
