@@ -108,12 +108,27 @@ body {
     flex-direction: column;
   }
 
+
   .sidebar {
-    position: relative;
     width: 100%;
     height: auto;
-    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
   }
+
+  .sidebar nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
 
   .main-content {
     margin-left: 0;
